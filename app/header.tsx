@@ -6,17 +6,20 @@ export function Header() {
   return (
     <header className="mb-8 flex items-center justify-between">
       <div>
-        <Link href="/" className="font-medium text-black dark:text-white">
-          Julien Nim
+        <Link
+          href="/"
+          className="text-3xl font-semibold text-black dark:text-white"
+        >
+          applefather.eth
         </Link>
         <TextEffect
           as="p"
           preset="fade"
           per="char"
-          className="text-zinc-600 dark:text-zinc-500"
+          className="text-lg text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
-          Design Engineer
+          building @goatcast - A programmable social network client
         </TextEffect>
       </div>
     </header>
