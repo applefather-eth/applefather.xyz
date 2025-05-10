@@ -20,7 +20,6 @@ import {
   SOCIAL_LINKS,
 } from './data'
 import Image from 'next/image'
-import cover1 from '@/public/cover1.jpg'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -253,11 +252,13 @@ export default function Personal() {
                     </p>
                   </div>
                   <Image
-                    src={cover1}
+                    src="/cover-1.jpg"
                     alt={post.title}
                     width={80}
                     height={80}
                     className="h-20 w-20 rounded object-cover"
+                    priority
+                    unoptimized
                   />
                 </div>
               </Link>
