@@ -19,6 +19,8 @@ import {
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
+import Image from 'next/image'
+import cover1 from '@/public/cover1.jpg'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -142,7 +144,7 @@ export default function Personal() {
           </p>
 
           <p className="text-zinc-600 dark:text-zinc-400">
-            Steve Jobs has always inspired me. That’s why I named my son Apple,
+            Steve Jobs has always inspired me. That's why I named my son Apple,
             so I can be an applefather.
           </p>
         </div>
@@ -223,7 +225,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-semibold">Blog</h3>
+        <h3 className="mb-3 text-lg font-semibold">Blog:</h3>
         <div className="flex flex-col space-y-4">
           <AnimatedBackground
             enableHover
@@ -241,13 +243,22 @@ export default function Personal() {
                 href={post.link}
                 data-id={post.uid}
               >
-                <div className="flex flex-col space-y-1">
-                  <h4 className="font-semibold dark:text-zinc-100">
-                    {post.title}
-                  </h4>
-                  <p className="text-zinc-500 dark:text-zinc-400">
-                    {post.description}
-                  </p>
+                <div className="flex flex-row items-center space-x-3">
+                  <div className="flex flex-col space-y-1">
+                    <h4 className="font-semibold dark:text-zinc-100">
+                      {post.title}
+                    </h4>
+                    <p className="text-zinc-500 dark:text-zinc-400">
+                      {post.description}
+                    </p>
+                  </div>
+                  <Image
+                    src={cover1}
+                    alt={post.title}
+                    width={80}
+                    height={80}
+                    className="h-20 w-20 rounded object-cover"
+                  />
                 </div>
               </Link>
             ))}
