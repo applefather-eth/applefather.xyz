@@ -143,11 +143,12 @@ export default function Personal() {
         </div>
       </motion.section>
 
+      {/* Projects Section - Temporarily Disabled
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+        <h3 className="mb-5 text-lg font-semibold">Selected Projects</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
@@ -171,12 +172,14 @@ export default function Personal() {
           ))}
         </div>
       </motion.section>
+      */}
 
+      {/* Work Experience Section - Temporarily Disabled
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
+        <h3 className="mb-5 text-lg font-semibold">Work Experience</h3>
         <div className="flex flex-col space-y-2">
           {WORK_EXPERIENCE.map((job) => (
             <a
@@ -209,16 +212,17 @@ export default function Personal() {
           ))}
         </div>
       </motion.section>
+      */}
 
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Blog</h3>
-        <div className="flex flex-col space-y-0">
+        <h3 className="mb-3 text-lg font-semibold">Blog</h3>
+        <div className="flex flex-col space-y-4">
           <AnimatedBackground
             enableHover
-            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
+            className="h-full w-full bg-zinc-100 dark:bg-zinc-900/80"
             transition={{
               type: 'spring',
               bounce: 0,
@@ -228,12 +232,12 @@ export default function Personal() {
             {BLOG_POSTS.map((post) => (
               <Link
                 key={post.uid}
-                className="-mx-3 rounded-xl px-3 py-3"
+                className="-mx-3 px-3 py-3"
                 href={post.link}
                 data-id={post.uid}
               >
                 <div className="flex flex-col space-y-1">
-                  <h4 className="font-normal dark:text-zinc-100">
+                  <h4 className="font-semibold dark:text-zinc-100">
                     {post.title}
                   </h4>
                   <p className="text-zinc-500 dark:text-zinc-400">

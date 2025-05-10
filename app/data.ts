@@ -100,20 +100,16 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/applefather-eth',
   },
   {
     label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://twitter.com/applefather.eth',
   },
   {
-    label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    label: 'Farcaster',
+    link: 'https://www.warpcast.com/applefather.eth',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'applefather.eth@gmail.com'
