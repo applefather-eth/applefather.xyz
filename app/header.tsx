@@ -15,9 +15,9 @@ export function Header() {
         <TextEffect
           as="p"
           preset="fade"
-          per="char"
+          per="line"
           className="text-lg text-zinc-600 dark:text-zinc-500"
-          delay={0.5}
+          delay={0}
         >
           building @goatcast - a programmable social network.
         </TextEffect>
